@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E3ED">
+
+    <TextView
+        android:id="@+id/book_apt_txt"
+        android:layout_width="361dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="621dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/book_apt_description"
+        android:textAlignment="textStart"
+        android:textColor="#875D87"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pet_txt"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/pet"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_txt" />
+
+    <TextView
+        android:id="@+id/apt_type_txt"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/apt_type"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_txt" />
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/name"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_apt_txt" />
+
+    <CalendarView
+        android:id="@+id/apt_calendar"
+        android:layout_width="221dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/date_txt"
+        app:layout_constraintTop_toBottomOf="@+id/apt_type_spinner" />
+
+    <TextView
+        android:id="@+id/time_txt"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="160dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/time"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_txt" />
+
+    <TextView
+        android:id="@+id/number_txt"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/number"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt" />
+
+    <EditText
+        android:id="@+id/time_editxt"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="time"
+        android:text="@string/dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toEndOf="@+id/time_txt"
+        app:layout_constraintTop_toBottomOf="@+id/apt_calendar" />
+
+    <TextView
+        android:id="@+id/date_txt"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/date"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apt_type_txt" />
+
+    <EditText
+        android:id="@+id/pet_editxt"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pet_txt"
+        app:layout_constraintTop_toBottomOf="@+id/phone_editxt" />
+
+    <Spinner
+        android:id="@+id/apt_type_spinner"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:contentDescription="@string/spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toEndOf="@+id/apt_type_txt"
+        app:layout_constraintTop_toBottomOf="@+id/pet_editxt" />
+
+    <EditText
+        android:id="@+id/name_editxt"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/name_txt"
+        app:layout_constraintTop_toBottomOf="@+id/book_apt_txt" />
+
+    <Button
+        android:id="@+id/book_apt_btn"
+        android:layout_width="132dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#875D87"
+        android:fontFamily="@font/epilogue_semibold"
+        android:onClick="onClickAddAppointment"
+        android:text="@string/book_apt_button"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_editxt" />
+
+    <Button
+        android:id="@+id/delete_apt_btn"
+        android:layout_width="132dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#875D87"
+        android:fontFamily="@font/epilogue_semibold"
+        android:onClick="onClickDeleteAppointment"
+        android:text="@string/delete_apt_button"
+
+        android:textSize="12sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toStartOf="@+id/update_apt_btn"
+        app:layout_constraintStart_toEndOf="@+id/book_apt_btn"
+        app:layout_constraintTop_toBottomOf="@+id/time_editxt" />
+
+    <Button
+        android:id="@+id/update_apt_btn"
+        android:layout_width="132dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="#875D87"
+        android:fontFamily="@font/epilogue_semibold"
+        android:onClick="onClickUpdateAppointment"
+        android:text="@string/update_apt_button"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_editxt" />
+
+    <EditText
+        android:id="@+id/phone_editxt"
+        android:layout_width="152dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="46dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:text="@string/dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/number_txt"
+        app:layout_constraintTop_toBottomOf="@+id/name_editxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

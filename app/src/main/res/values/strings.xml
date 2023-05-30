@@ -1,0 +1,34 @@
+<resources>
+
+    <string name="app_name">Happy Paws</string>
+    <string name="background_content_description">App background</string>
+    <string name="description1">At Happy Paws Clinic, our priority is your furry friend\'s health and happiness.</string>
+    <string name="description2">Your pet is in safe hands with our highly trained professionals who are committed to providing them with the best care possible.\n\nFrom regular check-ups to grooming appointments and sick visits, our clinic will meet all your pet\'s needs.</string>
+    <string name="description3">We can\'t wait to see you soon!</string>
+    <string name="home_button">Start</string>
+    <string name="map_content_description">Map icon</string>
+    <string name="appointment_option_title">Service 1</string>
+    <string name="pet_sit_option">Service 2</string>
+    <string name="bones_content_description">Bones cartoon image</string>
+
+
+    <string name="book_apt_description">Please fill out the following information to book your appointment.</string>
+    <string name="name">Name</string>
+    <string name="number">Phone number</string>
+    <string name="pet">Pet</string>
+    <string name="apt_type">Appointment type</string>
+    <string name="date">Appointment date</string>
+    <string name="time">Appointment time</string>
+    <string name="book_apt_button">Book my Appointment</string>
+    <string name="delete_apt_button">Delete my Appointment</string>
+    <string name="update_apt_button">Update my Appointment</string>
+    <string name="dots">...</string>
+    <string name="spinner">Select your appointment type</string>
+
+    <string name="pet_sitting_description">Please fill out the following information to book your pet sitting service.</string>
+    <string name="pet_sitting_date">Date</string>
+    <string name="pet_sitting_time">Time</string>
+    <string name="pet_sitting_duration">Duration</string>
+    <string name="pet_sitting_details">Extra details</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/background_content_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/background" />
+
+    <TextView
+        android:id="@+id/description1_txt"
+        android:layout_width="252dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="578dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/description1"
+        android:textAlignment="textStart"
+        android:textColor="#4F819E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/description2_txt"
+        android:layout_width="360dp"
+        android:layout_height="205dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="43dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/description2"
+        android:textAlignment="textStart"
+        android:textColor="#875D87"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/description1_txt" />
+
+    <TextView
+        android:id="@+id/description3_txt"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="109dp"
+        android:fontFamily="@font/epilogue_semibold"
+        android:text="@string/description3"
+        android:textAlignment="center"
+        android:textColor="#4F819E"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/description2_txt" />
+
+    <ImageButton
+        android:id="@+id/map_btn"
+        android:layout_width="78dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#D2E3ED"
+        android:contentDescription="@string/map_content_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/description3_txt"
+        app:layout_constraintTop_toBottomOf="@+id/description2_txt"
+        app:srcCompat="@drawable/map4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="265dp"
+        android:contentDescription="@string/bones_content_description"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toBottomOf="@+id/description3_txt"
+        app:srcCompat="@drawable/bones" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
